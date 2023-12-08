@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/backgroud"
+        tools:context=".Activities.Provider.CheckProviderPhone">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/register_image_1"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="150dp"
+                    app:srcCompat="@drawable/logo" />
+
+                <TextView
+                    android:id="@+id/register_text_view_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/register_image_1"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:text="@string/application_name"
+                    android:textColor="@color/white"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:orientation="vertical"
+
+                    android:layout_width="match_parent"
+
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:id="@+id/time_select"
+                        android:layout_marginTop="14sp"
+                        android:padding="8sp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/shep_edit"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="4dp"
+                            android:textColor="@color/black"
+                            android:drawableEnd="@drawable/line"
+                            android:textSize="16dp"
+                            android:text="+966"
+                            android:gravity="center"
+                            android:paddingTop="5dp"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:id="@+id/txtPhoneProvider"
+                            android:layout_height="50dp"
+                            android:inputType="phone"
+                            android:background="@drawable/shep_edit"
+                            android:gravity="center"
+                            android:padding="10sp"
+                            android:maxLength="10"
+                            android:hint="@string/phone"
+                            android:textColor="#3949AB"
+                            android:textStyle="bold"
+                            android:textSize="15dp"/>
+
+
+
+
+                    </LinearLayout>
+
+
+                    <Button
+                        android:id="@+id/btnCheckPhoneProvder"
+                        android:layout_width="130dp"
+                        android:layout_height="50dp"
+                        android:textSize="14sp"
+                        android:textColor="@color/white"
+                        android:layout_below="@+id/register_agent"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/okay"
+                        android:background="@drawable/circular_borderbutton"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp">
+
+
+                    </Button>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/register_cutomer"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="40dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="7dp"
+                        android:layout_marginEnd="5dp"
+                        android:fontFamily="sans-serif"
+                        android:textColor="@color/white"
+                        tools:ignore="RtlCompat" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+
+
+
+    </RelativeLayout>

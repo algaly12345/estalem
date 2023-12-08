@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="#ECECEC"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="10sp"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDarkProvider"
+                android:textSize="16sp"
+                android:text="@string/order_number"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/tvOrderNumberProvider"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textColor="#FFAD03"
+                android:text=""
+                android:gravity="center"
+
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_margin="0sp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imgOrderAttendProvider"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:padding="8sp"
+                android:background="@drawable/order_state_no_color"
+                tools:ignore="VectorDrawableCompat" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:background="@color/colorPrimaryDarkProvider"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"/>
+
+            <ImageView
+                android:id="@+id/imgOrderInRoadProvider"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/order_state_no_color"
+                android:gravity="center"
+                android:padding="6dp"
+                tools:ignore="VectorDrawableCompat" />
+
+
+            <LinearLayout
+                android:id="@+id/edit_doctoe"
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@color/colorPrimaryDarkProvider"
+                android:gravity="center"
+                tools:ignore="Orientation" />
+
+            <ImageView
+                android:id="@+id/imgOrderEndedProvider"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/order_state_no_color"
+                android:gravity="center"
+                tools:ignore="VectorDrawableCompat" />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvOrderAttendProvider"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/attend_order"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/tvOrderInRoadProvider"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_marginStart="30dp"
+                android:text="@string/in_road" />
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/tvOrderEndedProvider"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/don_order" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="wrap_content"
+                android:layout_margin="15dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_height="35dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp"
+                android:background="@drawable/denger_button"
+                android:textSize="14sp"
+                android:padding="3dp"
+                android:textColor="@color/white"
+                android:text="@string/cancel_order"/>
+            <ImageView
+                android:id="@+id/imgChat"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp"
+                android:background="@drawable/dark_provider_circle"
+                android:textSize="14sp"
+                android:src="@drawable/ic_chat_black_24dp"
+                android:textColor="@color/white"
+                android:padding="10sp"
+                android:text="@string/offer_price"
+                tools:ignore="VectorDrawableCompat" />
+            <Button
+                android:id="@+id/imgTrackingProvider"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:textSize="11sp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp"
+                android:textColor="@color/white"
+                android:background="@drawable/primary_button"
+                android:padding="10sp"
+                android:text="@string/client_location"
+                tools:ignore="VectorDrawableCompat" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+
+            <Button
+                android:id="@+id/btnInvoice"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:background="@drawable/buton_primery_provider"
+                android:text="@string/invoice"
+                android:textColor="@color/white" />
+
+
+            <Button
+                android:id="@+id/btnDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:background="@drawable/buton_primery_provider"
+                android:text="@string/details"
+                android:textColor="@color/white" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="@color/gray"
+            android:layout_marginTop="10sp"
+            android:layout_height="10dp"/>
+
+
+</LinearLayout>
+</LinearLayout>

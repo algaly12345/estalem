@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="@null">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imgProviderImage"
+                android:layout_width="70dp"
+                android:layout_marginTop="20dp"
+                android:layout_height="70dp"
+                android:src="@drawable/avtar"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvProviderName"
+                    android:layout_width="match_parent"
+                    android:text=""
+                    android:textSize="13dp"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/tvProviderCarName"
+                    android:layout_width="match_parent"
+                    android:text="camery 2019 - gold"
+                    android:textSize="13dp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10sp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"/>
+                <RatingBar
+                    android:id="@+id/rtProviderValuation"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_gravity="left"
+                    android:isIndicator="true"
+                    android:layout_marginTop="10sp"
+                    android:numStars="5"
+                    android:stepSize="0.1"
+                    android:theme="@style/RatingBar" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/btn_skip"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentLeft="true"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:padding="14sp"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btnOfferPrice"
+                android:layout_width="wrap_content"
+                android:background="@drawable/button_re_gre"
+                android:layout_height="40dp"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:text=""/>
+
+            <Button
+                android:id="@+id/btnOk"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_height="40dp"
+                android:background="@drawable/button_re_pre"
+                android:textSize="14sp"
+                android:textColor="@color/white"
+                android:text="@string/okay"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

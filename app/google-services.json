@@ -1,0 +1,83 @@
+{
+  "project_info": {
+    "project_number": "26556261806",
+    "firebase_url": "https://estalem-e8811.firebaseio.com",
+    "project_id": "estalem-e8811",
+    "storage_bucket": "estalem-e8811.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:26556261806:android:a369a2dd1acf3eceaa943f",
+        "android_client_info": {
+          "package_name": "com.samm.estalem"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "26556261806-ov5iic7oco7lutue46pcoh9c412uip5p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCj77bZx6OA1QPyRUDvamUH_RZat0KMceo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "26556261806-ov5iic7oco7lutue46pcoh9c412uip5p.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "26556261806-5rmq4rvdef2uahvtie1im90jm81cggfd.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "islamXdeveloper-gmail.com.Astlam"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:26556261806:android:52c11fb505eb66ffaa943f",
+        "android_client_info": {
+          "package_name": "com.samm.estalemaandroid"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "26556261806-ov5iic7oco7lutue46pcoh9c412uip5p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCj77bZx6OA1QPyRUDvamUH_RZat0KMceo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "26556261806-ov5iic7oco7lutue46pcoh9c412uip5p.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "26556261806-5rmq4rvdef2uahvtie1im90jm81cggfd.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "islamXdeveloper-gmail.com.Astlam"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

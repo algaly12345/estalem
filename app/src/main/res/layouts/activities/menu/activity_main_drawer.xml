@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <group
+
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/home_fragment"
+            android:icon="@drawable/home"
+            android:title="@string/home" />
+
+    </group>
+
+    <group
+        android:id="@+id/nav_login"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/myOrder"
+            android:icon="@drawable/list"
+            android:title="@string/my_order" />
+
+    </group>
+
+    <group
+        android:id="@+id/nav_policy"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/policy"
+            android:title="@string/policy" />
+
+    </group>
+
+    <group
+        android:id="@+id/nav_communication_group"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/my_count"
+            android:icon="@drawable/client_account_icon"
+            android:title="@string/my_account" />
+
+    </group>
+
+
+    <group
+        android:id="@+id/nav_communication_group1"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/about_as"
+            android:icon="@drawable/abot_as"
+            android:title="@string/about_as" />
+
+    </group>
+
+    <group
+        android:id="@+id/nav_communication_grou"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/tch_support"
+            android:icon="@drawable/customer_service"
+            android:title="@string/technical_support" />
+
+    </group>
+
+
+    <group
+        android:id="@+id/nav_communication_gr"
+
+        android:checkableBehavior="single">
+
+
+
+    </group>
+
+
+
+
+
+
+
+    <group
+        android:id="@+id/nav_communication_group3"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/setting"
+            android:icon="@drawable/setting"
+            android:title="@string/setting" />
+    </group>
+
+    <group
+        android:id="@+id/nav_Exit"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/n_exit"
+            android:icon="@drawable/logout"
+            android:title="@string/exit" />
+    </group>
+
+</menu>

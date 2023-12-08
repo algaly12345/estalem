@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:background="@color/colorWhite"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".Activities.Client.CustomerProfileActivity">
+
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp">
+
+
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/header_nav" />
+
+                    <RelativeLayout
+
+                        android:id="@+id/layoutPicture"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp">
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_centerInParent="true"
+                            android:id="@+id/profileImage"
+                            android:layout_width="140dp"
+                            android:layout_height="140dp"
+                            android:src="@drawable/avtar" />
+
+                        <com.google.android.material.floatingactionbutton.FloatingActionButton
+                            android:id="@+id/fabChoosePic"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="12dp"
+                            app:fabSize="mini"
+                            app:srcCompat="@drawable/pen"
+                            tools:ignore="VectorDrawableCompat" />
+                    </RelativeLayout>
+
+
+
+
+
+
+
+                </FrameLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:background="@drawable/category_textview_bg"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content"
+                    >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="10sp"
+                    android:layout_marginLeft="10sp"
+                    android:padding="13dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="@string/name"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:textSize="15dp"/>
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:id="@+id/txtFullName"
+                        android:layout_height="match_parent"
+                        android:enabled="false"
+                        android:gravity="center"
+                        android:background="@drawable/category_textview_bg"
+                        android:layout_weight="1"
+                        android:padding="10sp"
+                        android:textColor="#3949AB"
+                        android:textStyle="bold"
+                        android:textSize="15dp"/>
+
+                    <ImageButton
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:onClick="editName"
+                        android:padding="4dp"
+                        android:background="@drawable/category_textview_bg"
+                        android:src="@drawable/pen"
+                        android:gravity="center"
+                        android:paddingTop="5dp"
+                        tools:ignore="OnClick" />
+                </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:background="@color/black"
+                        android:layout_height="1dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="10sp"
+                    android:layout_marginLeft="10sp"
+                    android:padding="13dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="@string/phone"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:textSize="15dp"/>
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:id="@+id/txtPhone"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:enabled="false"
+                        android:padding="10sp"
+                        android:background="@drawable/category_textview_bg"
+                        android:textColor="#3949AB"
+                        android:textStyle="bold"
+                        android:textSize="15dp"/>
+
+                    <ImageButton
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/category_textview_bg"
+                        android:padding="4dp"
+                        android:src="@drawable/pen"
+                        android:gravity="center"
+                        android:paddingTop="5dp"/>
+                </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:background="@color/black"
+                        android:layout_height="1dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="10sp"
+                    android:layout_marginLeft="10sp"
+                    android:padding="13dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="@string/area"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:textSize="15dp"/>
+
+                    <EditText
+                        android:id="@+id/txtArea"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:padding="10sp"
+                        android:enabled="false"
+                        android:hint=""
+                        android:textColor="#3949AB"
+                        android:background="@drawable/category_textview_bg"
+                        android:textStyle="bold"
+                        android:textSize="15dp"/>
+
+                    <ImageButton
+                        android:id="@+id/doctor_education"
+                        android:background="@drawable/category_textview_bg"
+                        android:onClick="editAddress"
+                        android:layout_width="35dp"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:padding="4dp"
+                        android:paddingTop="5dp"
+                        android:src="@drawable/pen"
+
+                        tools:ignore="OnClick" />
+                </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:layout_marginRight="10sp"
+                        android:layout_marginLeft="10sp"
+                        android:padding="13dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="@string/city"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:textSize="15dp"/>
+
+                        <EditText
+                            android:id="@+id/txtCity"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            android:padding="10sp"
+                            android:enabled="false"
+                            android:hint=""
+                            android:textColor="#3949AB"
+                            android:background="@drawable/category_textview_bg"
+                            android:textStyle="bold"
+                            android:textSize="15dp"/>
+
+                        <ImageButton
+                            android:background="@drawable/category_textview_bg"
+                            android:onClick="editCity"
+                            android:layout_width="35dp"
+                            android:layout_height="40dp"
+                            android:gravity="center"
+                            android:padding="4dp"
+                            android:paddingTop="5dp"
+                            android:src="@drawable/pen"
+                            tools:ignore="OnClick" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+
+
+
+
+
+                <LinearLayout
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="50dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/btnUpdateProfile"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_width="wrap_content"
+                        android:background="@drawable/category_textview_bg"
+                        android:text="@string/saveChange"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:layout_gravity="center"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"
+                        android:textSize="12dp"
+                        tools:ignore="OnClick" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </LinearLayout>

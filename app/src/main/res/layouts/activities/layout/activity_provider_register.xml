@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_height="match_parent"
+        android:background="@drawable/backgroud"
+        tools:context=".Activities.Provider.RegisterProviderInfo"
+        android:orientation="vertical"
+        tools:ignore="MissingDefaultResource">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+
+                    <ImageView
+                        android:layout_width="200dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="80dp"
+                        android:src="@drawable/logo"/>
+
+
+                    <EditText
+                        android:id="@+id/txt_namePerson"
+                        android:layout_marginTop="80dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/shep_edit"
+                        android:drawableLeft="@drawable/ic_perm"
+                        android:drawableRight="@drawable/line"
+                        android:drawablePadding="16dp"
+                        android:drawableTint="@color/colorPrimaryDark"
+                        android:hint="@string/name"
+                        android:padding="14dp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textColorHint="@color/colorPrimaryDark" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:id="@+id/city_select"
+                        android:layout_marginTop="8sp"
+                        android:background="@drawable/shep_edit"
+                        android:orientation="horizontal">
+
+                        <Spinner
+                            android:id="@+id/splCityProvider"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="-3dp"
+                            android:inputType="textPersonName" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:id="@+id/time_select"
+                        android:layout_marginTop="8sp"
+
+
+                        android:background="@drawable/shep_edit"
+                        android:orientation="horizontal">
+
+                        <Spinner
+                            android:id="@+id/splDistrictsProiver"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="-3dp"
+                            android:inputType="textPersonName" />
+                    </LinearLayout>
+
+
+
+
+                        <EditText
+                            android:id="@+id/txtBankName"
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/shep_edit"
+                            android:drawableRight="@drawable/line"
+                            android:drawablePadding="16dp"
+                            android:drawableTint="@color/colorPrimaryDark"
+                            android:hint="@string/bank_name"
+                            android:padding="14dp"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textColorHint="@color/colorPrimaryDark" />
+
+
+
+
+
+                    <EditText
+                        android:id="@+id/txtNameOnCard"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/shep_edit"
+                        android:drawableRight="@drawable/line"
+                        android:drawablePadding="16dp"
+                        android:drawableTint="@color/colorPrimaryDark"
+                        android:hint="@string/account_number_name"
+                        android:padding="14dp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textColorHint="@color/colorPrimaryDark" />
+
+                    <EditText
+                        android:id="@+id/txtIPanNumber"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/shep_edit"
+                        android:drawableRight="@drawable/line"
+                        android:drawablePadding="16dp"
+                        android:drawableTint="@color/colorPrimaryDark"
+                        android:hint="@string/ipan_number"
+                        android:padding="14dp"
+                        android:inputType="number"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textColorHint="@color/colorPrimaryDark" />
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:onClick="registernow"
+
+
+
+
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    tools:ignore="OnClick">
+
+
+
+
+
+
+
+
+
+                </LinearLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:id="@+id/lin_flowe"
+                    android:layout_alignParentBottom="true"
+                    android:layout_height="match_parent">
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:background="@null"
+                        android:text="@string/next"
+                        android:textStyle="bold"
+                        android:textSize="17dp"
+                        android:onClick="Next"
+                        android:drawableLeft="@drawable/ic_chevron_left_black_24dp"
+                        android:textColor="@color/white"
+                        tools:ignore="OnClick" />
+
+
+
+
+
+
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+
+
+    </LinearLayout>

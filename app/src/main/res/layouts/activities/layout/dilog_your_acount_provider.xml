@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView xmlns:card_vew="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/mCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        card_vew:cardBackgroundColor="#F8F8F8"
+        card_vew:cardCornerRadius="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/dialog_title"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_account_balance_wallet_black_24dp"
+                android:background="@drawable/cerchle"
+                android:layout_marginTop="15dp"
+                android:padding="6sp"
+                android:layout_marginBottom="15dp"
+                tools:ignore="VectorDrawableCompat" />
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="10dp"
+                android:lineSpacingExtra="5dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:text="@string/your_account"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+            <Button
+                android:id="@+id/btnMyAccountProvider"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:background="@drawable/buttonshape"
+                android:text=""
+                android:layout_marginBottom="15dp"
+                android:textColor="@color/white"
+                android:textSize="16dp" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

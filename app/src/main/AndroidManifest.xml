@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.samm.estalem">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".Util.CheckInternetApp"
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".Activities.Policy"></activity>
+        <activity android:name=".Activities.Provider.InvoiceActivity" />
+        <activity android:name=".Activities.OrderDetailsActivity" />
+        <activity android:name=".Activities.Provider.DirectionToClient" />
+        <activity android:name=".Chat.FullScreenImage" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".Activities.Client.TrackingProvider"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_tracking_provider"
+            android:screenOrientation="fullSensor" />
+        <activity
+            android:name=".Activities.Client.OrderCompletedActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="fullSensor" />
+        <activity
+            android:name=".Activities.Suggestion"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="fullSensor" />
+        <activity
+            android:name=".Activities.Provider.ProviderMainActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_main2_provider"
+            android:screenOrientation="fullSensor"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activities.Client.RegisterClientActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="fullSensor" />
+        <activity
+            android:name=".Activities.Client.VerifyClientCodeActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="fullSensor" />
+        <activity
+            android:name=".Activities.Provider.RegisterProviderInfo"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="fullSensor" />
+        <activity
+            android:name=".Activities.Provider.ReceiveProviderOrderActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="fullSensor" />
+        <activity
+            android:name=".Activities.Client.CheckClientPhone"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="fullSensor" />
+        <activity
+            android:name=".Activities.Provider.ProviderProfileActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="fullSensor" />
+        <activity
+            android:name=".Chat.ChatActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="fullSensor"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".Activities.PermissionToAccess"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="fullSensor" />
+        <activity
+            android:name=".Activities.Provider.CheckProviderPhone"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="fullSensor" />
+        <activity
+            android:name=".Activities.Provider.VarifyProviderCode"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="fullSensor" />
+        <activity
+            android:name=".Activities.Client.ClientProfileActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="fullSensor" />
+        <activity
+            android:name=".Activities.Provider.RegisterProvider"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="fullSensor" /> <!-- <activity android:name=".Activities.Client.CustomerInfo" /> -->
+        <activity
+            android:name=".Activities.SettingActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="fullSensor" /> <!-- <activity android:name=".Activities.Client.CustomerInfo" /> -->
+        <activity
+            android:name=".Activities.About"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="fullSensor" />
+        <activity
+            android:name=".Activities.Client.ClientMainActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="fullSensor"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Activities.SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activities.Client.SelectDistrict"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="fullSensor" />
+
+        <service
+            android:name=".Chat.ChatService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".Util.ReceiveOrderService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".Util.GotoLiveMyLocation"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".CloudMessageing.FCMService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name=".Util.NetworkStateChangeReceiver"
+            android:enabled="true"
+            android:exported="true" />
+
+        <service android:name=".Util.LocationUpdateService" />
+    </application>
+
+</manifest>

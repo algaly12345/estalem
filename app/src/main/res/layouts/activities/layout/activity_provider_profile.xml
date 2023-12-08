@@ -1,0 +1,536 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:background="@color/colorWhite"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".Activities.Provider.ProviderProfileActivity">
+
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp">
+
+
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/header_nav_provider_imag" />
+
+                    <RelativeLayout
+
+                        android:id="@+id/layoutPicture"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/cerimageprofile"
+
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp">
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_centerInParent="true"
+                            android:id="@+id/profileImageProviderProv"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:src="@drawable/avtar" />
+
+                        <com.google.android.material.floatingactionbutton.FloatingActionButton
+                            android:id="@+id/fabChoosePicProvider"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="12dp"
+
+                            app:fabSize="mini"
+                            app:srcCompat="@drawable/pen"
+                            app:backgroundTint="@color/colorPrimaryDarkProvider"
+                            tools:ignore="VectorDrawableCompat" />
+                    </RelativeLayout>
+
+
+
+
+
+
+
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:background="@drawable/provider_backgroud"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:layout_marginRight="10sp"
+                        android:layout_marginLeft="10sp"
+                        android:padding="13dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="@string/name"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:textSize="15dp"/>
+
+                        <EditText
+                            android:layout_width="0dp"
+                            android:id="@+id/txtFullNameProvider"
+                            android:layout_height="match_parent"
+                            android:enabled="false"
+                            android:gravity="center"
+                            android:background="@drawable/provider_backgroud"
+                            android:layout_weight="1"
+                            android:padding="10sp"
+                            android:textColor="#3949AB"
+                            android:textStyle="bold"
+                            android:textSize="15dp"/>
+
+                        <ImageButton
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:onClick="editName"
+                            android:padding="4dp"
+                            android:background="@drawable/provider_backgroud"
+                            android:src="@drawable/pen"
+                            android:gravity="center"
+                            android:paddingTop="5dp"
+                            tools:ignore="OnClick" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:background="@color/black"
+                        android:layout_height="1dp"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:layout_marginRight="10sp"
+                        android:layout_marginLeft="10sp"
+                        android:padding="13dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="@string/car_name"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:textSize="15dp"/>
+
+                        <EditText
+                            android:layout_width="0dp"
+                            android:id="@+id/txtCarName"
+                            android:layout_height="match_parent"
+                            android:enabled="false"
+                            android:gravity="center"
+                            android:background="@drawable/provider_backgroud"
+                            android:layout_weight="1"
+                            android:padding="10sp"
+                            android:textColor="#3949AB"
+                            android:textStyle="bold"
+                            android:textSize="15dp"/>
+
+                        <ImageButton
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:onClick="editCarName"
+                            android:padding="4dp"
+                            android:background="@drawable/provider_backgroud"
+                            android:src="@drawable/pen"
+                            android:gravity="center"
+                            android:paddingTop="5dp"
+                            tools:ignore="OnClick" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:background="@color/black"
+                        android:layout_height="1dp"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:layout_marginRight="10sp"
+                        android:layout_marginLeft="10sp"
+                        android:padding="13dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="@string/plate_umber"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:textSize="15dp"/>
+
+                        <EditText
+                            android:layout_width="0dp"
+                            android:id="@+id/txtPlateNumber"
+                            android:layout_height="match_parent"
+                            android:enabled="false"
+                            android:gravity="center"
+                            android:background="@drawable/provider_backgroud"
+                            android:layout_weight="1"
+                            android:padding="10sp"
+                            android:textColor="#3949AB"
+                            android:textStyle="bold"
+                            android:textSize="15dp"/>
+
+                        <ImageButton
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:onClick="editPlateNumber"
+                            android:padding="4dp"
+                            android:background="@drawable/provider_backgroud"
+                            android:src="@drawable/pen"
+                            android:gravity="center"
+                            android:paddingTop="5dp"
+                            tools:ignore="OnClick" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:background="@color/black"
+                        android:layout_height="1dp"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:layout_marginRight="10sp"
+                        android:layout_marginLeft="10sp"
+                        android:padding="13dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="@string/bank_name"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:textSize="15dp"/>
+
+                        <EditText
+                            android:layout_width="0dp"
+                            android:id="@+id/txtBankName"
+                            android:layout_height="match_parent"
+                            android:enabled="true"
+                            android:gravity="center"
+                            android:background="@drawable/provider_backgroud"
+                            android:layout_weight="1"
+                            android:padding="10sp"
+                            android:textColor="#3949AB"
+                            android:textStyle="bold"
+                            android:textSize="15dp"/>
+
+                        <ImageButton
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:onClick="editPlateNumber"
+                            android:padding="4dp"
+                            android:background="@drawable/provider_backgroud"
+                            android:src="@drawable/pen"
+                            android:gravity="center"
+                            android:paddingTop="5dp"
+                            tools:ignore="OnClick" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:background="@color/black"
+                        android:layout_height="1dp"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:layout_marginRight="10sp"
+                        android:layout_marginLeft="10sp"
+                        android:padding="13dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="@string/ipan_number"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:textSize="15dp"/>
+
+                        <EditText
+                            android:layout_width="0dp"
+                            android:id="@+id/txtIPanNumber"
+                            android:layout_height="match_parent"
+                            android:enabled="true"
+                            android:gravity="center"
+                            android:background="@drawable/provider_backgroud"
+                            android:layout_weight="1"
+                            android:padding="10sp"
+                            android:textColor="#3949AB"
+                            android:textStyle="bold"
+                            android:textSize="15dp"/>
+
+                        <ImageButton
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:onClick="editPlateNumber"
+                            android:padding="4dp"
+                            android:background="@drawable/provider_backgroud"
+                            android:src="@drawable/pen"
+                            android:gravity="center"
+                            android:paddingTop="5dp"
+                            tools:ignore="OnClick" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:background="@color/black"
+                        android:layout_height="1dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:layout_marginRight="10sp"
+                        android:layout_marginLeft="10sp"
+                        android:padding="13dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="@string/account_number_name"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:textSize="15dp"/>
+
+                        <EditText
+                            android:layout_width="0dp"
+                            android:id="@+id/txtNameOnCard"
+                            android:layout_height="match_parent"
+                            android:enabled="true"
+                            android:gravity="center"
+                            android:background="@drawable/provider_backgroud"
+                            android:layout_weight="1"
+                            android:padding="10sp"
+                            android:textColor="#3949AB"
+                            android:textStyle="bold"
+                            android:textSize="15dp"/>
+
+                        <ImageButton
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:onClick="editPlateNumber"
+                            android:padding="4dp"
+                            android:background="@drawable/provider_backgroud"
+                            android:src="@drawable/pen"
+                            android:gravity="center"
+                            android:paddingTop="5dp"
+                            tools:ignore="OnClick" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:background="@color/black"
+                        android:layout_height="1dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:layout_marginRight="10sp"
+                        android:layout_marginLeft="10sp"
+                        android:padding="13dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="@string/phone"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:textSize="15dp"/>
+
+                        <EditText
+                            android:layout_width="0dp"
+                            android:id="@+id/txtPhoneProviderPro"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            android:enabled="false"
+                            android:padding="10sp"
+                            android:background="@drawable/provider_backgroud"
+                            android:textColor="#3949AB"
+                            android:textStyle="bold"
+                            android:textSize="15dp"/>
+
+                        <ImageButton
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/provider_backgroud"
+                            android:padding="4dp"
+                            android:src="@drawable/pen"
+                            android:gravity="center"
+                            android:paddingTop="5dp"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:background="@color/black"
+                        android:layout_height="1dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:layout_marginRight="10sp"
+                        android:layout_marginLeft="10sp"
+                        android:padding="13dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="@string/city"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:textSize="15dp"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:id="@+id/time_select"
+                            android:layout_marginTop="8sp"
+                            android:background="@drawable/provider_backgroud"
+                            android:orientation="horizontal">
+
+                            <Spinner
+                                android:id="@+id/splDistriCity"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="match_parent"
+                                android:layout_marginRight="20dp"
+                                android:layout_marginTop="5dp"
+                                android:backgroundTint="@color/white"
+                                android:layout_marginLeft="20dp"
+                                android:inputType="textPersonName" />
+                        </LinearLayout>
+
+
+                        <ImageButton
+                            android:id="@+id/doctor_education"
+                            android:background="@drawable/provider_backgroud"
+                            android:onClick="editAddress"
+                            android:layout_width="35dp"
+                            android:layout_height="40dp"
+                            android:gravity="center"
+                            android:padding="4dp"
+                            android:paddingTop="5dp"
+                            android:src="@drawable/pen"
+
+                            tools:ignore="OnClick" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:layout_marginRight="10sp"
+                        android:layout_marginLeft="10sp"
+                        android:padding="13dp"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="@string/area"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:textSize="15dp"/>
+                        <Spinner
+                            android:id="@+id/splDistricprofile"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="5dp"
+                            android:backgroundTint="@color/white"
+                            android:layout_marginLeft="20dp"
+                            android:inputType="textPersonName" />
+
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+
+
+
+
+
+                <LinearLayout
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="50dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/btnUpdateProfileProvider"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_width="wrap_content"
+                        android:background="@drawable/provider_backgroud"
+                        android:text="@string/saveChange"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:layout_gravity="center"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"
+                        android:textSize="12dp"
+                        tools:ignore="OnClick" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </LinearLayout>

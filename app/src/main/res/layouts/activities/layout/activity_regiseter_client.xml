@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroud"
+    tools:context=".Activities.Client.RegisterClientActivity"
+    android:orientation="vertical"
+    tools:ignore="MissingDefaultResource">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="80dp"
+                    android:src="@drawable/logo"/>
+
+
+                <EditText
+                    android:id="@+id/txtFullName"
+                    android:layout_marginTop="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shep_edit"
+                    android:drawableLeft="@drawable/ic_perm"
+                    android:drawableRight="@drawable/line"
+                    android:drawablePadding="16dp"
+                    android:drawableTint="@color/colorPrimaryDark"
+                    android:hint="@string/name"
+                    android:padding="14dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textColorHint="@color/colorPrimaryDark" />
+
+                <EditText
+                    android:id="@+id/txtCity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/shep_edit"
+                    android:drawableLeft="@drawable/ic_person"
+                    android:drawableRight="@drawable/line"
+                    android:drawablePadding="16dp"
+                    android:drawableTint="@color/colorPrimaryDark"
+                    android:hint="@string/city"
+                    android:padding="14dp"
+                    android:gravity="right"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textColorHint="@color/colorPrimaryDark" />
+
+
+                <EditText
+                    android:id="@+id/txtArea"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/shep_edit"
+                    android:drawableLeft="@drawable/ic_person"
+                    android:drawableRight="@drawable/line"
+                    android:drawablePadding="16dp"
+                    android:drawableTint="@color/colorPrimaryDark"
+                    android:hint="@string/area"
+                    android:padding="14dp"
+                    android:gravity="right"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textColorHint="@color/colorPrimaryDark" />
+
+
+                <Button
+                    android:id="@+id/btnRegister"
+                    android:text="@string/okay"
+                    android:textColor="@color/white"
+                    android:background="@drawable/circular_borderbutton"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="50dp"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>

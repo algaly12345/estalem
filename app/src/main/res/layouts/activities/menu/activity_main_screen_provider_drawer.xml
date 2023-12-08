@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+<group
+android:id="@+id/nav_communication_group_providera11"
+android:checkableBehavior="single">
+
+
+
+</group>
+
+    <group
+
+        android:id="@+id/nav_communication_group_providersd"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/customer_list"
+            android:icon="@drawable/list_provider"
+            android:title="@string/home" />
+
+    </group>
+
+    <group
+        android:id="@+id/nav_communication_group_providera"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/myorderlist_list"
+            android:icon="@drawable/myord_kust"
+            android:title="@string/my_order" />
+
+    </group>
+
+
+
+    <group
+        android:id="@+id/nav_active"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/active"
+            android:icon="@drawable/active_service"
+            android:title="@string/activation" />
+
+    </group>
+
+
+
+    <group
+        android:id="@+id/nav_communication_groupa"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/my_counta_provider"
+            android:icon="@drawable/client_account_iconprovider"
+            android:title="@string/my_account" />
+
+    </group>
+
+
+    <group
+        android:id="@+id/nav_policy"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/policy"
+            android:title="@string/policy" />
+
+    </group>
+
+
+
+
+    <group
+        android:id="@+id/nav_communication_group_provider"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/about_as_provider"
+            android:icon="@drawable/abot_as_provider"
+            android:title="@string/about_as" />
+
+    </group>
+
+    <group
+        android:id="@+id/nav_communication_grou_provider"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/tch_support_provider"
+            android:icon="@drawable/customer_service_provider"
+            android:title="@string/technical_support" />
+
+    </group>
+
+
+    <group
+        android:id="@+id/nav_communication_g_provider"
+
+        android:checkableBehavior="single">
+
+
+
+    </group>
+
+
+    <group
+        android:id="@+id/nav_communication_group3_provider"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/setting_provider"
+            android:icon="@drawable/setting_provider"
+            android:title="@string/setting" />
+    </group>
+
+    <group
+        android:id="@+id/nav_Exit_provider"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/n_exit_provider"
+            android:icon="@drawable/logout_provier"
+            android:title="@string/exit" />
+    </group>
+
+
+
+</menu>
